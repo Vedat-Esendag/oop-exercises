@@ -1,0 +1,31 @@
+Project: Recursive Maze Navigation
+Objective:
+Develop a console application to navigate a maze using a recursive Depth-First Search (DFS) algorithm. The application reads the maze from maze.txt, finds a path from the start (S) to the end (E), and displays this path.
+
+Depth-First Search (DFS) Basics:
+DFS is an algorithm for traversing or searching tree or graph data structures. It starts at a selected node (in this case, the start point S), explores as far as possible along each branch before backtracking. For maze navigation, DFS can systematically explore all paths from S to E, marking visited paths and backtracking when no further progress can be made.
+
+Required Components:
+Maze Representation (maze.txt):
+Text file containing the maze layout: 1 for obstacles, 0 for open paths, S for the start point, and E for the end point.
+MazeSolver Class:
+Parses maze.txt to identify the maze layout, including the start and end positions.
+Implements the DFS algorithm recursively to find a path from S to E, marking visited paths to avoid revisits and backtracking as needed.
+Program Class:
+Manages user interaction, initiates the maze-solving process using MazeSolver, and outputs the found path or indicates if no path is found.
+Technical Requirements:
+File I/O: Efficiently read and parse the maze structure from maze.txt.
+Recursive DFS: Implement the DFS algorithm to navigate the maze, including mechanisms for path tracking and backtracking.
+Path Output: Capture and display the series of steps from S to E.
+Think, Pair, Share Activities:
+Pair: Work in pairs to design your recursive DFS strategy. Collaboratively explore the concept of DFS and plan its recursive implementation for maze navigation. Implement the MazeSolver together to apply DFS in finding a path through the maze. Design several mazes for testing.
+
+Share: Share your mazes with peers. Attempt to solve their maze using your application. Discuss the differences in your approaches and the challenges encountered, including strategies for pathfinding and backtracking.
+
+Example maze.txt:
+1 S 1 1 1 1
+1 0 1 0 0 1
+1 0 1 0 1 1
+1 0 0 0 0 1
+1 1 0 1 0 1
+1 1 1 1 E 1
